@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  moisture_level_status: 1
+  soil_moisture_status: MyText
+  water_pump_status: 1
+
+two:
+  name: MyText
+  moisture_level_status: 1
+  soil_moisture_status: MyText
+  water_pump_status: 1
