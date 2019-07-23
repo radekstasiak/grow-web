@@ -1,0 +1,21 @@
+<h1>Listing readings</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Moisture level status</th>
+    <th>Soil moisture status</th>
+    <th>Water pump status</th>
+    <th></th>
+  </tr>
+ 
+  <% @readings.each do |reading| %>
+    <tr>
+      <td><%= reading.name %></td>
+      <td><%= reading.moisture_level_status %></td>
+      <td><%= reading.soil_moisture_status %></td>
+      <td><%= reading.water_pump_status %></td>
+      <td><%= link_to 'Show', reading_path(reading) %></td>
+    </tr>
+  <% end %>
+</table>
