@@ -1,10 +1,10 @@
 namespace :mqtt_task do
   task :my_task1 => :environment do
   	conn_opts = {
-  		remote_host: 'm24.cloudmqtt.com',
-  		remote_port: 17236,
-  		username: 'vlfnelyd',
-  		password: 'nXE1FVBVSJHn'
+  		remote_host: ENV['MQTT_CLOUD_URL'],
+  		remote_port: ENV['MQTT_CLOUD_PORT'],
+  		username: ENV['MQTT_CLOUD_USER'],
+  		password: ENV['MQTT_CLOUD_PASSWORD']
 	}
 	MQTT::Client.connect(conn_opts) do |c|
     	# The block will be called when you messages arrive to the topic
