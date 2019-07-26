@@ -2,7 +2,7 @@
  
 <table>
   <tr>
-    <th>Name</th>
+    <th>Created at</th>
     <th>Moisture level status</th>
     <th>Soil moisture status</th>
     <th>Water pump status</th>
@@ -11,7 +11,7 @@
  
   <% @readings.each do |reading| %>
     <tr>
-      <td><%= reading.name %></td>
+      <td><%= reading.created_at %></td>
       <td><%= reading.moisture_level_status %></td>
       <td><%= reading.soil_moisture_status %></td>
       <td><%= reading.water_pump_status %></td>
